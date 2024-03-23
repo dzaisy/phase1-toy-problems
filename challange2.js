@@ -7,11 +7,11 @@ function speedCalc() {
     }
     else {
         points = Math.floor((speed - 70) / 5); // driver gets a demerit for every 5 km/h they go over
-        if (points > 12) {
-            document.getElementById('result').textContent = 'your license is SUSPENDED';
+        if (points > 12) { // checks to see if the points given are more than 12, responds apropriately
+            document.getElementById('suspended').textContent = 'your license is SUSPENDED';
         }
         else {
-            document.getElementById('result').textContent = `points: ${points}`;
+            document.getElementById('numpoints').textContent = `points: ${points}`;
         }
     }
 }
