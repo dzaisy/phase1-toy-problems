@@ -1,3 +1,4 @@
+// challange 1 - student grade generator
 function studentGradeCalc() {
     let studentGrade = ''  // declares studentGrade in a manner that allows it to change
     if (studentMark > 79 && studentMark <= 100) {
