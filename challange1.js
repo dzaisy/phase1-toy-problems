@@ -1,6 +1,6 @@
 // challange 1 - student grade generator
 function studentGradeCalc() {
-    const studentMark = (prompt('enter student marks:'));
+    const studentMark = (prompt('enter student marks:')); // allows user to enter marks
     let studentGrade = '';  // declares studentGrade in a manner that allows it to change
     
     if (studentMark > 79 && studentMark <= 100) {
