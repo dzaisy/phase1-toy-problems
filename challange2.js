@@ -1,19 +1,18 @@
 // challange 2 - speed detector
+const speed = parseInt(prompt('input speed of car:'))
 function speedCalc() {
-    const speed = parseInt(document.getElementById('speed').value); // parseInt takes user input and converts it into an integer for computer to read
     // the value given is assigned an id of speed via document.getElementById
-    let points = 0; // sets points to 0 every time a new speed is entered
     if (speed < 70) {
-        document.getElementById('result').textContent = 'ok';
+        console.log('ok')
     }
     else {
-        points = Math.floor((speed - 70) / 5); // driver gets a demerit for every 5 km/h they go over
+        const points = Math.floor((speed - 70) / 5); // driver gets a demerit for every 5 km/h they go over
         // Math.floor rounds speed down and returns the largest num > or =
         if (points > 12) { // checks to see if the points given are more than 12, responds apropriately
-            document.getElementById('suspended').textContent = 'your license is SUSPENDED';
+            console.log('license SUSPENDED');
         }
         else {
-            document.getElementById('numpoints').textContent = `points: ${points}`;
+            console.log(`points: ${points}`);
         } 
     }
 }
