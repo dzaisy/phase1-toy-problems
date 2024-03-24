@@ -1,5 +1,7 @@
 // challange 1 - student grade generator
 function studentGradeCalc() {
+    const studentMark = parseInt(document.getElementById('studentMark').value);  // the value given is assigned an id of studentMark via document.getElementById
+    // parseInt takes user input and converts it into an integer for computer to read
     let studentGrade = ''  // declares studentGrade in a manner that allows it to change
     if (studentMark > 79 && studentMark <= 100) {
         studentGrade == 'A'
@@ -16,4 +18,6 @@ function studentGradeCalc() {
     else {
         studentGrade == 'E'
     }
+    document.getElementById('studentGrade').textContent = `students grade is: ${studentGrade}`; // .textContent returns the studentGrade 
+    // text content is set to 'students grade is ...'
 } // if..else if...else used to return the correct grade
