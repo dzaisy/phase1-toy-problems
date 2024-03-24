@@ -2,6 +2,7 @@
 function speedCalc() {
     const speed = parseInt(document.getElementById('speed').value); // parseInt takes user input and converts it into an integer for computer to read
     // the value given is assigned an id of speed via document.getElementById
+    let points = 0; // sets points to 0 every time a new speed is entered
     if (speed < 70) {
         document.getElementById('result').textContent = 'ok';
     }
